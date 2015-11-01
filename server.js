@@ -11,6 +11,7 @@ var sensor = require('./sensor.js')
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('client'));
 
 var port = process.env.PORT || 8080;        // set our port
 

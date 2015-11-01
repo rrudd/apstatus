@@ -1,8 +1,9 @@
 {
-  "name": "node-api",
+  "name": "apstatus-api",
   "main": "server.js",
+  "repository": "https://github.com/rrudd/apstatus",
   "dependencies": {
-    "express": "~4.0.0",
-    "body-parser": "~1.0.1"
+    "body-parser": "~1.0.1",
+    "express": "~4.0.0"
   }
 }
