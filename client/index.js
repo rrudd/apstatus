@@ -35,7 +35,7 @@ var TempView = React.createClass({
     var temperature = this.props.data.temperature;
     return (
       <div className="tempView">
-        {temperature}
+        Current temperature is: {temperature} C
       </div>
     );
   }
@@ -46,7 +46,7 @@ var HumidityView = React.createClass({
     var humidity = this.props.data.humidity
     return (
       <div className="humidityView">
-        {humidity}
+        Current humidity is {humidity} %RH
       </div>
     );
   }
