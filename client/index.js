@@ -32,7 +32,7 @@ var StatusCard = React.createClass({
 
 var TempView = React.createClass({
   render: function() {
-    var temperature = this.props.data.temperature;
+    var temperature = this.props.data.temperature.toFixed(2);
     return (
       <div className="tempView">
         Current temperature is: {temperature} C
@@ -43,7 +43,7 @@ var TempView = React.createClass({
 
 var HumidityView = React.createClass({
   render: function() {
-    var humidity = this.props.data.humidity
+    var humidity = this.props.data.humidity.toFixed(2);
     return (
       <div className="humidityView">
         Current humidity is {humidity} %RH

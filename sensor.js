@@ -10,7 +10,7 @@ var dhtSensor = {
 
 try{
   dhtSensor = require('node-dht-sensor');
-  dhtSensor.initialize(22, 9);
+  dhtSensor.initialize(22, 4);
 }catch(e){
   console.log('node-dht-sensor package not installed');
 }

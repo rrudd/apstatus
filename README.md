@@ -6,6 +6,7 @@ A lightweight node.js &amp; react.js application for monitoring apartment status
 - [Raspberry Pi](https://www.raspberrypi.org/)
 - DHT 22 (or 11) temperature and humidity sensor
 - [Node.js and NPM](https://nodejs.org/)
+- [BCM2835 library](http://www.airspayce.com/mikem/bcm2835/)
 
 ### Installation
 
@@ -14,4 +15,4 @@ A lightweight node.js &amp; react.js application for monitoring apartment status
 
 ### Usage
 
-Run `npm start`, and access the application on port `8080`
+Run `sudo npm start`, and access the application on port `8080`. The server needs root access in order to get readings from the sensor.
