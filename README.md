@@ -15,4 +15,10 @@ A lightweight node.js &amp; react.js application for monitoring apartment status
 
 ### Usage
 
-Run `sudo npm start`, and access the application on port `8080`. The server needs root access in order to get readings from the sensor.
+Run `sudo npm start`, and access the application on port `8080`. The server needs root access in order to get readings from the sensor. 
+
+Note that the default configuration uses a DHT22 connected via GPIO4, this can be configured in `sensor.js` by editing the line `dhtSensor.initialize(22, 4);`.
+
+### Known issues
+
+The default repositories on Raspbian may have an outdated version of node.js. The easiest way of solving this is [installing node from the Adafruit repo](https://learn.adafruit.com/node-embedded-development/installing-node-dot-js).
