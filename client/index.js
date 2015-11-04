@@ -53,6 +53,6 @@ var HumidityView = React.createClass({
 });
 
 ReactDOM.render(
-  <StatusCard url="/api" pollInterval={2000} />,
+  <StatusCard url="/api" pollInterval={5000} />,
   document.getElementById('content')
 );

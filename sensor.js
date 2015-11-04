@@ -16,5 +16,10 @@ try{
 }
 
 exports.getCurrentReading = function(){
-  return dhtSensor.read();
+  var reading = dhtSensor.read();
+  var reading = {
+    temperature: reading.temperature.toFixed(1);
+    humidity: reading.humidity.toFixed();
+  }
+  return reading;
 };
